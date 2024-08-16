@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700,400italic");
+
+:root {
+    --big-colour: #d7ffff;
+    --small-colour: #28555f;
+    --background: url("bg.webp");
+    --small-on-big: 0 0 1rem var(--small-colour);
+}
+
+html { 
+    background: linear-gradient(34deg, rgba(215,255,255,1) 0%, rgba(40,85,95,1) 100%); 
+    min-height: 100vh; 
+    min-width: 100vw; 
+    color: var(--big-colour); 
+    font-family: Karla, sans-serif;
+}
+
+h2 { 
+    font-size: 200%; 
+    text-align: center; 
+    text-shadow: var(--small-on-big); 
+}
+
+td { 
+    background: var(--big-colour); 
+    color: var(--small-colour); 
+    padding: .375em .625em; 
+    box-shadow: var(--small-on-big); 
+}
+
+table { 
+    border-spacing: .25em; 
+    border-collapse: separate; 
+    margin: 1em auto; 
+}
+
+.m, .t, thead { 
+    display: none; 
+}
+
+.s { 
+    text-align: right; 
+}
+
+.foot { 
+    opacity: .5; 
+    text-align: center; 
+    font-size: smaller; 
+}
+
+a { 
+    transition: transform 100ms, color 200ms; 
+    color: #75201c; 
+    font-weight: 700; 
+}
+
+a:hover { 
+    color: #bd342c; 
+}
